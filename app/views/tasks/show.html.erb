@@ -1,0 +1,7 @@
+<h2><%= @task.title %></h2>
+<p>
+<%= @task.details %>
+</p>
+<div> <%= link_to "back to list", "/tasks", :class => "task-link" %> </div>
+<div> <%= link_to "edit task", edit_task_path(@task.id), :class => "task-link" %> </div>
+<div> <%= link_to "delete task", destroy_task_path(@task.id), method: :delete, :class => "task-link" %> </div>
